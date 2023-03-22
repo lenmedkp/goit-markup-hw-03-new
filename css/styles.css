@@ -7,6 +7,7 @@
 h1
 h2
 h3
+h4
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -30,6 +31,7 @@ img {
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
@@ -39,13 +41,17 @@ body {
    color: #434455;
 }
 
+.page-header {
+  border-bottom: 1px solid #E7E9FC;
+}
+
 .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left:  15px; 
   padding-right: 15px;
- }
+  padding-left: 15px;
+   }
 
  .page-header-container {
 display: flex;
@@ -67,7 +73,7 @@ align-items: center;
   margin-right: 40px;
  }
 
- .menu-list {
+  .menu-list {
  display: flex;
  align-items: center;
  }
@@ -83,8 +89,8 @@ align-items: center;
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-left: 76px;
-  color: #4d5ae5;
+  padding-left: 0;
+   color: #4d5ae5;
 }
 
 .web {
@@ -165,34 +171,90 @@ align-items: center;
 .menu-item-phone {
   margin-left: 40px;
 }
+
 .hero {
-  background-color: #2e2f42;
+width: 1440px;
+height: 600px;
+left: 0px;
+top: 72px;
+background-color: #2e2f42;
 }
 
 .hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-    color: #ffffff;
+  font-family: var(--primary-font);
+ font-weight: 700;
+ font-size: 56px;
+ line-height: 1.07;
+ text-align: center;
+ letter-spacing: 0.02em;
+ position: absolute;
+ width: 496px;
+ height: 120px;
+ left: 472px;
+top: 260px;
+ color: #ffffff;
   }
 
-.section-title {
-  font-style: normal;
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+ }
+
+.section-feature {
+display: flex;
+flex-wrap:wrap;
+gap: 24px;
+}
+
+.section-title-products {
+   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+ padding-bottom: 72px;
   color: #2e2f42;
+ text-align: center;
 }
 
-.name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-   letter-spacing: 0.02em;
-  color: #2e2f42;
+.section-products-list {
+ display: flex;
+flex-wrap:wrap;
+gap: 24px;
+}
+
+.employees-section {
+  background-color: #F4F4FD;
+ }
+
+ .section-title-team {
+  font-style: normal;
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.11;
+ letter-spacing: 0.02em;
+ text-transform: capitalize;
+ color: #2e2f42;
+ text-align: center;
+ padding-bottom: 72px;
+     }
+
+.list-profession {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+}
+
+.profession-item {
+  width: 264px;
+  border: 1px solid #ccc;
+}
+
+.profession-item-employees-name {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  text-align: center;
 }
 
 .modal-btn {
@@ -202,6 +264,12 @@ align-items: center;
   line-height: 1.5;
   letter-spacing: 0.04em; 
    color: #FFFFFF;
+   position: absolute;
+   width: 169px;
+   height: 56px;
+   left: 636px;
+   top: 428px;
+   margin-top: 48px;
   background-color: #4D5AE5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -232,9 +300,30 @@ background-color: var(--accent-color);
 }
 
 .page-down {
-  background-color: #2e2f42;
+   background-color: #2e2f42;
 }
 
+.filters-btn {
+  display: flex;
+   flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+position: absolute;
+width: 586px;
+height: 48px;
+left: 427px;
+top: 168px;
+}
 
+.cards-menu-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
-
+.card-list-title-text {
+  padding-top: 32px;
+  padding-bottom: 8px;
+  border: 1px solid #E7E9FC;
+}

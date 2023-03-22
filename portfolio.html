@@ -11,36 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page">
-      <div class="container">
+    <header class="page-header">
+      <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logo-link link" href="WEBSTUDIO"
-            >WEB<span class="page-studio">STUDIO</span></a
+            >WEB<span class="page-studio">Studio</span></a
           >
           <ul class="site-nav list">
-            <li class="menu-item">
-              <a class="menu-item link" href="./index.html">Studio</a>
+            <li class="site-nav-item">
+              <a class="site-nav link" href="./index.html">Studio</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-item link" href="./portfolio.html">Portfolio</a>
+            <li class="site-nav-item">
+              <a class="site-nav link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-item link" href="contacts">Contacts</a>
+            <li class="site-nav-item">
+              <a class="site-nav link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address>
+        <address class="menu-contacts">
           <ul class="menu-list list">
             <li class="menu-item">
-              <a class="mailto link" href="info@devstudio.com"
+              <a class="contacts link" href="info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="menu-item">
-              <a class="tel-number link" href="+110001111111"
+            <li class="menu-item-phone">
+              <a class="contacts link" href="+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -49,24 +53,26 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="section">
-          <h1 hidden class="section-title">Portfolio</h1>
+      <section class="filters section">
+                <h1 hidden class="section-title">Portfolio</h1>
           <ul class="filters-btn list">
             <li>
-              <button class="filter-btn-item" type="button">Web Site</button>
+              <button class="filter-btn-item" type="button">All</button>
             </li>
-            <li><button class="filter-btn-item" type="button">App</button></li>
+            <li><button class="filter-btn-item" type="button">Web Site</button></li>
+            <li>
+              <button class="filter-btn-item" type="button">App</button>
+            </li>
             <li>
               <button class="filter-btn-item" type="button">Design</button>
             </li>
-            <li>
-              <button class="filter-btn-item" type="button">Marketing</button>
-            </li>
-            <li><button class="filter-btn-item" type="button">All</button></li>
+            <li><button class="filter-btn-item" type="button">Marketing</button></li>
           </ul>
-          <ul class="menu-link list">
-            <li class="list">
+      </section>
+      <section class="row-cards-section section">
+        <div class="container">
+          <ul class="cards-menu-link list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-up-1.jpg"
@@ -74,11 +80,12 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Banking App Interface Concept</h2>
-                <p class="list-text">App</p>
+                <p class="list-text">App</p></div>
               </a>
             </li>
-            <li class="list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-up-2.jpg"
@@ -86,11 +93,12 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Cashless Payment</h2>
-                <p class="list-text">Marketing</p>
+                <p class="list-text">Marketing</p></div>
               </a>
             </li>
-            <li class="list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-up-3.jpg"
@@ -98,11 +106,18 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Meditation App</h2>
-                <p class="list-text">App</p>
+                <p class="list-text">App</p></div>
               </a>
             </li>
-            <li class="list">
+          </ul>
+        </div>
+      </section>
+      <section class="row-cards-section section">
+        <div class="container">
+          <ul class="cards-menu-link list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-medium-1.jpg"
@@ -110,11 +125,12 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Taxi Service</h2>
-                <p class="list-text">Marketing</p>
+                <p class="list-text">Marketing</p></div>
               </a>
             </li>
-            <li class="list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-medium-2.jpg"
@@ -122,11 +138,12 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Screen Illustrations</h2>
-                <p class="list-text">Design</p>
+                <p class="list-text">Design</p></div>
               </a>
             </li>
-            <li class="list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-medium-3.jpg"
@@ -134,11 +151,18 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Online Courses</h2>
-                <p class="list-text">Marketing</p>
+                <p class="list-text">Marketing</p></div>
               </a>
             </li>
-            <li class="list">
+          </ul>
+        </div>
+      </section>
+      <section class="row-cards-section section">
+        <div class="container">
+          <ul class="cards-menu-link list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-down-1.jpg"
@@ -146,11 +170,12 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Instagram Stories Concept</h2>
-                <p class="list-text">Design</p>
+                <p class="list-text">Design</p></div>
               </a>
             </li>
-            <li class="list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-down-2.jpg"
@@ -158,11 +183,12 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Organic Food</h2>
-                <p class="list-text">Web Site</p>
+                <p class="list-text">Web Site</p></div>
               </a>
             </li>
-            <li class="list">
+            <li class="card-item list">
               <a class="link" href="#">
                 <img
                   src="./images/img-row-down-3.jpg"
@@ -170,13 +196,14 @@
                   width="360"
                   height="300"
                 />
+                <div class="card-list-title-text">
                 <h2 class="list-title">Fresh Coffee</h2>
-                <p class="list-text">Web Site</p>
+                <p class="list-text">Web Site</p></div>
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="page-down">
       <div class="container">
