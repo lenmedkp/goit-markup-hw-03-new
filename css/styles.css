@@ -197,7 +197,6 @@ top: 260px;
 
 .section {
 padding-top: 120px;
-padding-bottom: 120px;
  }
 
 .section-feature {
@@ -299,19 +298,15 @@ color: #FFFFFF;
 background-color: var(--accent-color);
 }
 
-.page-down {
-   background-color: #2e2f42;
-}
-
 .filters-btn {
   display: flex;
    flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-position: absolute;
-width: 586px;
-height: 48px;
+ align-items: flex-start;
+ padding: 0px;
+ gap: 24px;
+ position: absolute;
+ width: 586px;
+ height: 48px;
 left: 427px;
 top: 168px;
 }
@@ -327,3 +322,23 @@ top: 168px;
   padding-bottom: 8px;
   border: 1px solid #E7E9FC;
 }
+  
+.down-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+  color: #E7E9FC;
+}
+
+.page-down {
+  width: 1440px;
+  height: 310px;
+  background-color: #2e2f42;
+  }
+  
+.page-down-list {
+  padding-top: 100px;
+  padding-bottom:100px;
+      }
