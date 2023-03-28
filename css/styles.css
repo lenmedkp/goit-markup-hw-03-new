@@ -198,6 +198,7 @@ font-family: var(--primary-font);
     line-height: 1.5;
     letter-spacing: 0.04em; 
     color: #FFFFFF;
+    padding: 16px 32px;
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
@@ -226,7 +227,7 @@ gap: 24px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
- padding-bottom: 72px;
+ margin-bottom: 72px;
   color: var(--text-color);
  text-align: center;
 }
@@ -266,7 +267,7 @@ gap: 24px;
 
 .profession-item-employees-name {
   padding-top: 32px;
-  padding-bottom: 8px;
+  padding-bottom: 32px;
   text-align: center;
   background-color: #FFFFFF;
 }
@@ -310,6 +311,17 @@ gap: 24px;
   padding-bottom:100px;
       }
 
+.filters-btn {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-bottom: 72px;
+justify-content:center;
+text-align: center;
+gap: 24px;
+}
+      
+
 .filter-btn-item {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -318,6 +330,9 @@ gap: 24px;
   letter-spacing: 0.04em; 
   color: #4D5AE5;
   background-color: #F4F4FD;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
 }
 
 .filter-btn-item:hover,
@@ -325,17 +340,6 @@ gap: 24px;
 color: #FFFFFF;
 background-color: var(--accent-color);
 }
-
-.filters-btn {
-  display: flex;
-   flex-direction: row;
- align-items: flex-start;
- padding-top: 96px;
- padding-bottom: 72px;
- padding-left: 427px;
- padding-right: 427px;
- gap: 24px;
- }
 
 .cards-menu-link {
   display: flex;
@@ -349,7 +353,8 @@ background-color: var(--accent-color);
 
 .card-list-title-text {
   padding-top: 32px;
-  padding-bottom: 8px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   border: 1px solid #E7E9FC;
 }
  
